@@ -8,3 +8,6 @@ ScrollOverListView
 工程 Android 版本 4.4.2
 
 此为初学者代码 谨慎使用
+
+
+![image](https://github.com/feiongithub/ScrollOverListView/apkScreenshot)
