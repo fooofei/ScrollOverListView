@@ -3,6 +3,7 @@ package me.hujianfei.activity;
 import me.hujianfei.scrolloverlistview.R;
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,6 +12,8 @@ import android.widget.Button;
 
 public class MainActivity extends Activity
 {
+	
+	public static final String URL_ON_GITHUB = "https://github.com/feiongithub/ScrollOverListView";
 	private Button mbtnNormalListView;
 	private Button mbtnScrollOverListView;
 	
@@ -21,9 +24,6 @@ public class MainActivity extends Activity
 		setContentView(R.layout.activity_main);
 		
 		initView();
-		
-		
-	
 	}
 
 	public void initView()
@@ -73,6 +73,9 @@ public class MainActivity extends Activity
 		int id = item.getItemId();
 		if (id == R.id.menuLink)
 		{
+			Intent i = new Intent(Intent.ACTION_VIEW);
+			i.setData(Uri.parse(URL_ON_GITHUB));
+			startActivity(i);
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
