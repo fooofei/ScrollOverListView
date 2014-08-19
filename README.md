@@ -10,4 +10,5 @@ ScrollOverListView
 此为初学者代码 谨慎使用
 
 
+软件主界面截图
 ![github](https://github.com/feiongithub/ScrollOverListView/blob/master/apkScreenshot.png)
