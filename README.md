@@ -10,4 +10,4 @@ ScrollOverListView
 此为初学者代码 谨慎使用
 
 
-![image](https://github.com/feiongithub/ScrollOverListView/apkScreenshot)
+![image](https://github.com/feiongithub/ScrollOverListView/apkScreenshot.png)
