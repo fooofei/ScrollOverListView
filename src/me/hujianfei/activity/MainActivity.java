@@ -16,6 +16,7 @@ public class MainActivity extends Activity
 	public static final String URL_ON_GITHUB = "https://github.com/feiongithub/ScrollOverListView";
 	private Button mbtnNormalListView;
 	private Button mbtnScrollOverListView;
+	private Button mbtnNormalListViewAddHeader;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -30,9 +31,11 @@ public class MainActivity extends Activity
 	{
 		mbtnNormalListView = (Button)findViewById(R.id.btnNormalListView);
 		mbtnScrollOverListView = (Button)findViewById(R.id.btnScrollOverListView);
+		mbtnNormalListViewAddHeader = (Button)findViewById(R.id.btnNormalListViewAddHeader);
 		
 		mbtnNormalListView.setOnClickListener(clickListener);
 		mbtnScrollOverListView.setOnClickListener(clickListener);
+		mbtnNormalListViewAddHeader.setOnClickListener(clickListener);
 	}
 	
 	private android.view.View.OnClickListener clickListener = new View.OnClickListener()
@@ -50,6 +53,11 @@ public class MainActivity extends Activity
 
 			case R.id.btnScrollOverListView:
 				intent.setClass(getApplicationContext(), ScrollOverListViewActivity.class);
+				break;
+				
+			case R.id.btnNormalListViewAddHeader:
+				
+				intent.setClass(getApplicationContext(), ListViewAddHeaderActivity.class);
 				break;
 			default:
 				break;

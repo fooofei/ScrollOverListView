@@ -64,7 +64,7 @@ public class ListViewAdapter extends BaseAdapter
 			convertView = LayoutInflater.from(mContext).inflate(R.layout.listview_item, null);
 			
 			viewHolder = new ViewHolder();
-			viewHolder.tv = (TextView)convertView.findViewById(R.id.listview_item_text1);
+			viewHolder.tv = (TextView)convertView.findViewById(R.id.listViewItemText);
 			
 			convertView.setTag(viewHolder);
 		}

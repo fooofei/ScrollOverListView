@@ -2,17 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin" >
+    android:layout_marginTop="5dp"
+    android:orientation="vertical" >
 
     
     <TextView 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        style="@style/marginNoTop"
         android:text="现在我们需要一个ListView，比如放联系人列表，而且在这个ListView 的上方或者下方，我们还会放置View、TextView
  、Button的控件，一个或者多个，而且我们还不想它一直占据着屏幕空间，希望它能随着ListView的向上滑动，而滑到上面去，不显示，当ListView向下拉，拉到顶部的时候，上方的控件又能够显示出来。我们有这样一个需求，下面是两种实现方式。
  网上的解决方案http://www.apkbus.com/android-161576-1-1.html"/>
@@ -23,17 +20,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="当ListView上下的控件比较少的时候，比较适合这个方法."
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"/>
+        style="@style/marginNoBottom"
+        />
     <Button 
         android:id="@+id/btnNormalListView"
         android:text="NormalListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="20dp"
-        android:layout_marginRight="20dp"/>
+ 		style="@style/marginNoTop"
+        />
+    
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用ListView.addHeaderView方法"
+        style="@style/marginNoBottom"/>
+    <Button 
+        android:id="@+id/btnNormalListViewAddHeader"
+        android:text="NormalListViewAddHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/marginNoTop"/>
     
     
     <Button 
@@ -41,5 +49,5 @@
         android:text="ScrollOverListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"/>
+        android:layout_margin="10dp"/>
 </LinearLayout>

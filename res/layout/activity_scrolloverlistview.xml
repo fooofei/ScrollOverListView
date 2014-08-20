@@ -39,7 +39,7 @@
   
 
         <me.hujianfei.view.ScrollOverListView
-            android:id="@+id/list"
+            android:id="@+id/scrollOverListView"
             android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

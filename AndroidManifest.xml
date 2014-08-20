@@ -28,6 +28,10 @@
             android:label="@string/normal_listview"/>
         
         <activity 
+            android:name="me.hujianfei.activity.ListViewAddHeaderActivity"
+            android:label="@string/normal_listview"/>
+        
+        <activity 
             android:name="me.hujianfei.activity.ScrollOverListViewActivity"/>
     </application>
 

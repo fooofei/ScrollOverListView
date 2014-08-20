@@ -34,7 +34,7 @@ public class ScrollOverListViewActivity extends Activity
 
 	public void initView()
 	{
-		this.listView = (ScrollOverListView) findViewById(R.id.list);
+		this.listView = (ScrollOverListView) findViewById(R.id.scrollOverListView);
 		this.scrollView = (ScrollView) findViewById(R.id.scrollView);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
@@ -43,7 +43,7 @@ public class ScrollOverListViewActivity extends Activity
 	{
 		List<String> dataList = new ArrayList<String>();
 
-		for (int i = 0; i < 200; i++)
+		for (int i = 0; i < 300; i++)
 		{
 			dataList.add(String.valueOf(i));
 		}
